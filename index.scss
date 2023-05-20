@@ -32,8 +32,8 @@ $rectangle-pad: 15px 0px;
 }
 
 .attribution { 
-    padding-top: 22px;
-    font-size: 11px; 
+    padding-top: 20px;
+    font-size: 14px; 
     text-align: center; 
     color: black;
 }
@@ -43,12 +43,14 @@ $rectangle-pad: 15px 0px;
 }
 
 .container {
-    padding-top: 100px;
+    padding: 100px 0px;
     border-radius: 10px;
 }
 
 .background {
-    background-color: #ECF2FF
+    background-color: #ECF2FF;
+    height: 100lvh;
+    max-width: 100avh;
 }
 
 .btn-continue {
@@ -76,21 +78,31 @@ $rectangle-pad: 15px 0px;
    padding: $rectangle-pad;
    color: hsla(0, 100%, 67%, 1);
    background-color: hsla(0, 100%, 67%, 0.05);
+   display: grid;
 }
 
 .memory {
     border-radius: $right-rectangle;
     padding: $rectangle-pad;
+    color: hsla(39, 100%, 56%, 1);
+    background-color: hsla(39, 100%, 56%, 0.05);
+    display: grid;
 }
 
 .verbal {
     border-radius: $right-rectangle;
     padding: $rectangle-pad;
+    color: hsla(166, 100%, 37%, 1);
+    background-color: hsla(166, 100%, 37%, 0.05);
+    display: grid;
 }
 
 .visual {
     border-radius: $right-rectangle;
     padding: $rectangle-pad;
+    color: hsla(234, 85%, 45%, 1);
+    background-color: hsla(234, 85%, 45%, 0.05);
+    display: grid;
 }
 
 .result-number-darknavy {
