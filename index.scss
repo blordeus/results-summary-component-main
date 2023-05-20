@@ -1,9 +1,15 @@
 @import url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
 
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+  }
+
 $font-stack: 'HankenGrotesk', sans-serif;
 $gradient: linear-gradient(180deg, rgba(105,67,255,1) 20%, rgba(47,44,233,1) 100%);
 $invert-gradient: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13, 10, 146, 0.534) 100%);
 $left-text-color: rgb(202,201,255);
+$right-header: black;
 
 .section1 {
     background: rgb(105,67,255);
@@ -92,14 +98,16 @@ $left-text-color: rgb(202,201,255);
     font-family: $font-stack;
     font-weight: 800;
     color: white;
-    font-size: 70px;
+    font-size: 80px;
 }
 
 .small-number {
     font-family: $font-stack;
     font-weight: 500;
     font-size: 20px;
-    color: $left-text-color
+    color: $left-text-color;
+    line-height: 20px;
+    padding-top: 40px;
 }
 
 .header-L {
@@ -111,12 +119,18 @@ $left-text-color: rgb(202,201,255);
 
 .header-M {
     color: $left-text-color;
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 20px;
     padding-bottom: 20px;
 }
 
 .paragraph {
     color: $left-text-color;
     font-family: $font-stack;
+}
+
+.right-header {
+    color: $right-header;
+    font-family: $font-stack;
+    font-weight: bold;
 }
