@@ -3,6 +3,11 @@
   font-family: "HankenGrotesk";
   src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .section1 {
   background: rgb(105, 67, 255);
   background: linear-gradient(180deg, rgb(105, 67, 255) 20%, rgb(47, 44, 233) 100%);
@@ -33,14 +38,13 @@
 }
 
 .container {
-  padding: 100px 0px;
+  padding: 100px;
   border-radius: 10px;
 }
 
 .background {
   background-color: #ECF2FF;
-  height: 100lvh;
-  max-width: 100avh;
+  height: 100vh;
 }
 
 .btn-continue {
@@ -144,4 +148,21 @@
   font-family: "HankenGrotesk", sans-serif;
   font-weight: bold;
   display: flex;
+}
+
+@media (min-device-width: 770px) {
+  #containermobile {
+    display: none;
+  }
+  body {
+    background-color: #ECF2FF;
+  }
+}
+@media (max-device-width: 769px) {
+  #containerPC {
+    display: none;
+  }
+  body {
+    background-color: #ECF2FF;
+  }
 }/*# sourceMappingURL=index.css.map */
