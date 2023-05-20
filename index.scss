@@ -10,6 +10,8 @@ $gradient: linear-gradient(180deg, rgba(105,67,255,1) 20%, rgba(47,44,233,1) 100
 $invert-gradient: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13, 10, 146, 0.534) 100%);
 $left-text-color: rgb(202,201,255);
 $right-header: black;
+$right-rectangle: 10px;
+$rectangle-pad: 15px 0px;
 
 .section1 {
     background: rgb(105,67,255);
@@ -19,13 +21,13 @@ $right-header: black;
 }
 
 .section2 {
-    background-color: rgb(87, 86, 86);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 30px;
 }
 
 .rectangle {
-    background-color: rgb(87, 86, 86);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
@@ -46,16 +48,17 @@ $right-header: black;
 }
 
 .background {
-    color: #ECF2FF
+    background-color: #ECF2FF
 }
 
 .btn-continue {
     outline: solid 1px $gradient;
     background: $gradient;
     border-radius: 50px;
-    padding: 2px 50px;
+    padding: 10px 50px;
     color: rgb(255, 255, 255);
     font-weight: 500;
+    font-family: $font-stack;
 }
 
 .circle {
@@ -69,21 +72,25 @@ $right-header: black;
 }
 
 .reaction {
-   border-radius: 10px;
-   color: rgba(255, 85, 85, 1);
-   background-color: blueviolet
+   border-radius: $right-rectangle;
+   padding: $rectangle-pad;
+   color: hsla(0, 100%, 67%, 1);
+   background-color: hsla(0, 100%, 67%, 0.05);
 }
 
 .memory {
-@extend .reaction;
+    border-radius: $right-rectangle;
+    padding: $rectangle-pad;
 }
 
 .verbal {
- @extend .reaction;
+    border-radius: $right-rectangle;
+    padding: $rectangle-pad;
 }
 
 .visual {
- @extend .reaction;
+    border-radius: $right-rectangle;
+    padding: $rectangle-pad;
 }
 
 .result-number-darknavy {
@@ -127,10 +134,12 @@ $right-header: black;
 .paragraph {
     color: $left-text-color;
     font-family: $font-stack;
+    font-size: 18px;
 }
 
 .right-header {
     color: $right-header;
     font-family: $font-stack;
     font-weight: bold;
+    display: flex;
 }
