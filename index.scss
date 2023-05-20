@@ -82,7 +82,7 @@ body {
    padding: $rectangle-pad;
    color: hsla(0, 100%, 67%, 1);
    background-color: hsla(0, 100%, 67%, 0.05);
-   display: grid;
+   display: flex;
 }
 
 .memory {
@@ -90,7 +90,7 @@ body {
     padding: $rectangle-pad;
     color: hsla(39, 100%, 56%, 1);
     background-color: hsla(39, 100%, 56%, 0.05);
-    display: grid;
+    display: flex;
 }
 
 .verbal {
@@ -98,7 +98,7 @@ body {
     padding: $rectangle-pad;
     color: hsla(166, 100%, 37%, 1);
     background-color: hsla(166, 100%, 37%, 0.05);
-    display: grid;
+    display: flex;
 }
 
 .visual {
@@ -106,15 +106,25 @@ body {
     padding: $rectangle-pad;
     color: hsla(234, 85%, 45%, 1);
     background-color: hsla(234, 85%, 45%, 0.05);
-    display: grid;
+    display: flex;
 }
 
 .result-number-darknavy {
-    color: 303B59;
+    color: #303B59;
+    font-weight: bold;
+    padding-right: 1%;
 }
 
 .result-number-gray {
     color: lightslategray
+}
+
+.summarynumber {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transform: translateY(9px);
+    transform: translateX(-120px);
 }
 
 .huge-number {
@@ -184,7 +194,7 @@ body {
     .rectangle {
         background-color: $gradient;
         border-radius: 50px;
-        scale: 1.3;
+        transform: scale(1.3);
     }
 
     .right-header {
