@@ -1,18 +1,88 @@
-$purple: #7755FF;
+@import url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+
+$font-stack: 'HankenGrotesk', sans-serif;
+$gradient: linear-gradient(180deg, rgba(105,67,255,1) 20%, rgba(47,44,233,1) 100%);
+$invert-gradient: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13, 10, 146, 0.534) 100%);
 
 .section1 {
-    background-color: $purple;
+    background: rgb(105,67,255);
+    background: linear-gradient(180deg, rgba(105,67,255,1) 20%, rgba(47,44,233,1) 100%);
+    border-radius: 15px;
+    padding: 30px;
 }
 
 .section2 {
-    background-color: white;
+    background-color: rgb(87, 86, 86);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.rectangle {
+    background-color: rgb(87, 86, 86);
+    border-radius: 15px;
 }
 
 .attribution { 
+    padding-top: 22px;
     font-size: 11px; 
     text-align: center; 
+    color: black;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.container {
+    padding-top: 100px;
+    border-radius: 10px;
+}
+
+.background {
+    color: #ECF2FF
+}
+
+.btn-continue {
+    outline: solid 1px $gradient;
+    background: $gradient;
+    border-radius: 50px;
+    padding: 2px 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: $invert-gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reaction {
+   border-radius: 10px;
+   color: rgba(255, 85, 85, 1);
+   background-color: blueviolet
+}
+
+.memory {
+@extend .reaction;
+}
+
+.verbal {
+ @extend .reaction;
+}
+
+.visual {
+ @extend .reaction;
+}
+
+.result-number-darknavy {
+    color: 303B59;
+}
+
+.result-number-gray {
+    color: lightslategray
 }
