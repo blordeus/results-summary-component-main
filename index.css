@@ -47,8 +47,8 @@
 }
 
 .circle {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13, 10, 146, 0.534) 100%);
   display: flex;
@@ -68,4 +68,37 @@
 
 .result-number-gray {
   color: lightslategray;
+}
+
+.huge-number {
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 70px;
+}
+
+.small-number {
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(202, 201, 255);
+}
+
+.header-L {
+  color: white;
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.header-M {
+  color: rgb(202, 201, 255);
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.paragraph {
+  color: rgb(202, 201, 255);
+  font-family: "HankenGrotesk", sans-serif;
 }/*# sourceMappingURL=index.css.map */

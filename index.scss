@@ -3,6 +3,7 @@
 $font-stack: 'HankenGrotesk', sans-serif;
 $gradient: linear-gradient(180deg, rgba(105,67,255,1) 20%, rgba(47,44,233,1) 100%);
 $invert-gradient: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13, 10, 146, 0.534) 100%);
+$left-text-color: rgb(202,201,255);
 
 .section1 {
     background: rgb(105,67,255);
@@ -52,8 +53,8 @@ $invert-gradient: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13,
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: $invert-gradient;
     display: flex;
@@ -85,4 +86,37 @@ $invert-gradient: linear-gradient(360deg, rgba(105, 67, 255, 0.123) 0%, rgba(13,
 
 .result-number-gray {
     color: lightslategray
+}
+
+.huge-number {
+    font-family: $font-stack;
+    font-weight: 800;
+    color: white;
+    font-size: 70px;
+}
+
+.small-number {
+    font-family: $font-stack;
+    font-weight: 500;
+    font-size: 20px;
+    color: $left-text-color
+}
+
+.header-L {
+    color: white;
+    font-family: $font-stack;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.header-M {
+    color: $left-text-color;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.paragraph {
+    color: $left-text-color;
+    font-family: $font-stack;
 }
