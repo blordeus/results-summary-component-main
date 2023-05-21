@@ -1,107 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./index.css">
-  
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/images/favicon-32x32.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./index.css">
 
-</head>
+    <title>Frontend Mentor | Results summary component</title>
 
-<body>
-<main class="background"> 
-  <div class="container text-center">
-    <div class="row rectangle">
-      <div class="col section1">
-        <div class="col">
-          <p class="header-M">Your Result</p>
-        </div>
-        <div class="col">
-          <div class="circle container-fluid">
-          <h2 class="small-number"><span class="huge-number">76</span><br>of 100</h2>
+  </head>
+
+  <body>
+    <main class="background">
+      <div class="container text-center">
+        <div class="row rectangle">
+          <div class="col section1">
+            <div class="col">
+              <p class="header-M">Your Result</p>
+            </div>
+            <div class="col">
+              <div class="circle container-fluid">
+                <h2 class="small-number"><span class="huge-number">76</span><br>of
+                  100</h2>
+              </div>
+            </div>
+            <div class="col">
+              <h1 class="header-L">Great</h1>
+            </div>
+            <div class="col">
+              <p class="paragraph">You scored higher than 65% of the people who
+                have taken these tests.</p>
+            </div>
+          </div>
+          <div class="col section2">
+            <div class="row gy-3">
+              <div class="col">
+                <h2 class="right-header">Summary</h2>
+              </div>
+              <div class="col-12 reaction">
+                <div class="col-1 justify-content-start">
+                  <img src="./assets/images/icon-reaction.svg" alt="reaction">
+                </div>
+                <div class="col-1">
+                  Reaction
+                </div>
+                <div class="col-12 justify-content-right summarynumber">
+                  <span class="result-number-darknavy">80</span>
+                  <span class="result-number-gray">/ 100</span>
+                </div>
+              </div>
+              <div class="col-12 memory">
+                <div class="col-1 justify-content-start">
+                  <img src="./assets/images/icon-memory.svg" alt="memory">
+                </div>
+                <div class="col-1">
+                  Memory
+                </div>
+                <div class="col-12 justify-content-right summarynumber">
+                  <span class="result-number-darknavy">92</span>
+                  <span class="result-number-gray">/ 100</span>
+                </div>
+              </div>
+              <div class="col-12 verbal">
+                <div class="col-1 justify-content-start">
+                  <img src="./assets/images/icon-verbal.svg" alt="verbal">
+                </div>
+                <div class="col-1">
+                  Verbal
+                </div>
+                <div class="col-12 justify-content-right summarynumber">
+                  <span class="result-number-darknavy">61</span>
+                  <span class="result-number-gray">/ 100</span>
+                </div>
+              </div>
+              <div class="col-12 visual">
+                <div class="col-1 justify-content-start">
+                  <img src="./assets/images/icon-visual.svg" alt="memory">
+                </div>
+                <div class="col-1">
+                  Visual
+                </div>
+                <div class="col-12 justify-content-right summarynumber">
+                  <span class="result-number-darknavy">72</span>
+                  <span class="result-number-gray">/ 100</span>
+                </div>
+              </div>
+              <div class="row gy-3">
+                <div class="col-12">
+                  <button type="button" class="btn btn-continue col-10">Continue</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <h1 class="header-L">Great</h1>
-        </div>
-        <div class="col">
-          <p class="paragraph">You scored higher than 65% of the people who have taken these tests.</p>
-        </div>        
-      </div>
-      <div class="col section2">
-        <div class="row gy-3">
-        <div class="col">
-        <h2 class="right-header">Summary</h2>
-      </div>
-      <div class="col-12 reaction">
-        <div class="col-1 justify-content-start">
-      <img src="./assets/images/icon-reaction.svg" alt="reaction">
-        </div>
-        <div class="col-1">
-      Reaction
-        </div>
-         <div class="col-12 justify-content-right summarynumber">
-          <span class="result-number-darknavy">80</span> 
-          <span class="result-number-gray">/ 100</span>
-         </div>
-    </div>
-        <div class="col-12 memory">
-          <div class="col-1 justify-content-start">
-        <img src="./assets/images/icon-memory.svg" alt="memory">
+        <footer class="attribution">
+          <div class=".d-none .d-md-block">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank" rel="noopener">Frontend Mentor</a>.
+            Coded by <a href="#">Bryan Lordeus</a>.
           </div>
-          <div class="col-1">
-        Memory
-          </div>
-           <div class="col-12 justify-content-right summarynumber">
-            <span class="result-number-darknavy">92</span> 
-            <span class="result-number-gray">/ 100</span>
-           </div>
-      </div>
-      <div class="col-12 verbal">
-        <div class="col-1 justify-content-start">
-      <img src="./assets/images/icon-verbal.svg" alt="verbal">
-        </div>
-        <div class="col-1">
-      Verbal
-        </div>
-         <div class="col-12 justify-content-right summarynumber">
-          <span class="result-number-darknavy">61</span> 
-          <span class="result-number-gray">/ 100</span>
-         </div>
-    </div>
-    <div class="col-12 visual">
-      <div class="col-1 justify-content-start">
-    <img src="./assets/images/icon-visual.svg" alt="memory">
-      </div>
-      <div class="col-1">
-    Memory
-      </div>
-       <div class="col-12 justify-content-right summarynumber">
-        <span class="result-number-darknavy">72</span> 
-        <span class="result-number-gray">/ 100</span>
-       </div>
-  </div>
-        <div class="row gy-4"> 
-        <div class="col-12">
-        <button type="button" class="btn btn-continue col-10">Continue</button>
-        </div>
-      </div>
-      </div>
-      </div>
-    </div>
-    <footer class="attribution">
-      <div class=".d-none .d-md-block">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener" >Frontend Mentor</a>. 
-      Coded by <a href="#">Bryan Lordeus</a>.
-      </div>
-    </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</main>
-</body>
-</html>
+        </footer>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"></script>
+      </main>
+    </body>
+  </html>
