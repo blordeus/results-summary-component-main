@@ -12,6 +12,7 @@ $left-text-color: rgb(202,201,255);
 $right-header: black;
 $right-rectangle: 10px;
 $rectangle-pad: 20px 0px;
+$active-button: #303B59;
 
 body {
     margin: 0;
@@ -58,13 +59,16 @@ body {
 }
 
 .btn-continue {
-    outline: solid 1px $gradient;
-    background: $gradient;
+    outline: solid 1px $active-button;
+    background: $active-button;
     border-radius: 50px;
     padding: 10px 50px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-family: $font-stack;
+       &:active {
+          background-color: $gradient;
+       }
 }
 
 .circle {
